@@ -57,7 +57,7 @@ function Get-OSDSoftware {
     #   Paths
     #===================================================================================================
     #{374DE290-123F-4565-9164-39C4925E467B}
-    if (!($DownloadPath)) {$DownloadPath = [Environment]::GetFolderPath("Desktop")}
+    if (!($DownloadPath)) {$DownloadPath = [Environment]::GetFolderPath("Downloads")}
     if (!(Test-Path "$DownloadPath")) {New-Item -Path "$DownloadPath" -ItemType Directory -Force | Out-Null}
     #===================================================================================================
     #   Software
